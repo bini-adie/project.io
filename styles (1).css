@@ -1,0 +1,274 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffd1d1;
+  color: #333;
+
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffd1d1;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo-section img {
+  width: 60px;
+}
+
+.logo-name {
+  font-size: 18px;
+  color:  #d14d72;
+  margin-left: 10px;
+  font-family: "Pacifico", cursive;
+}
+
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color:  #d14d72;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.cart-icon {
+  font-size: 24px;
+  color: #4dd1a3;
+}
+
+.hero {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.hero h1 {
+  font-size: 32px;
+  color: #d14d72;
+}
+
+.hero-items img {
+  width: 610px;
+  margin: 10x;
+  border-radius: 10px;
+}
+
+.featured-products {
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.featured-products h2 {
+  font-size: 24px;
+  color: #d14d72;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.custom-cakes {
+  display: flex;
+  padding: 20px;
+}
+
+.left-section {
+  flex: 1;
+  text-align: center;
+  background-color:#fff;
+  padding: 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.order-button {
+  background-color: #d14d72;
+  color:  #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.right-section {
+  flex: 2;
+}
+
+.cake-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.cake-images img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #d14d72;
+  color: #fff;
+  padding: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 24px; 
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1); 
+}
+.flags img {
+  width: 50px;
+  px; /
+  margin: 0 5px; 
+}
+
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-logo {
+  width:60px;
+}
+
+.footer-note {
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+.order-now-btn, .order-button {
+  background-color: #d14d72; 
+  color: #fff; 
+  padding: 12px 25px; 
+  border-radius: 25px;
+  font-size: 16px; 
+  font-weight: bold;
+  cursor: pointer; 
+  transition: all 0.3s ease; 
+  border: none; 
+  text-transform: uppercase; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.order-now-btn:hover, .order-button:hover {
+  background-color: #d1577a;
+  transform: scale(1.05); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.order-now-btn:active, .order-button:active {
+  background-color: #ba4960; 
+  transform: scale(0.98); 
+}
+
+.featured-products h2 {
+  font-size: 28px; 
+  color: #fff; 
+  text-transform: uppercase; 
+  font-weight: bold; 
+  letter-spacing: 2px; 
+  background-color: #d14d72; 
+  padding: 10px 20px; 
+  border-radius: 8px; 
+  display: inline-block; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 20px; 
+  font-family: 'Pacifico',cursive ; 
+}
+.product {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.product-overlay {
+  position: relative;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.product-hover-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Initially transparent */
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.product p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2; /* Ensure text appears above the background */
+}
+
+.product:hover img {
+  transform: scale(1.1);
+}
+
+.product:hover .product-hover-bg {
+  background-color: rgba(0, 0, 0, 0.6); /* Dark background on hover */
+}
+
+.product:hover p {
+  opacity: 1;
+}
+
+.header {
+  position: sticky;
+  top: 0; /* Ensures the header sticks to the top of the viewport */
+  z-index: 1000; /* Ensures it stays above other content */
+  background-color: #ffd1d1; /* Optional: Keeps the background solid for better visibility */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for better separation */
+}
+
+
